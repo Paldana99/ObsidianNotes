@@ -38,5 +38,11 @@ Lambdas : Function with no name.
 val swim = { println("swim \n") }
 swim()
 // return -> swim
-val waterFilter = { dirty : in }
+
+// Lambdas with an argument:
+val waterFilter (Int) -> Int = { dirty -> dirty / 2 }
+waterFilter(20)
+// return -> 10
+
 ```
+High Order functions: Functions that receive a function as parameter. 
