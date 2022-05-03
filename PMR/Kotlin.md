@@ -46,3 +46,23 @@ waterFilter(20)
 
 ```
 High Order functions: Functions that receive a function as parameter. 
+```kt
+// High order fun
+updateDirty(dirty : Int, operation: (Int) -> Int) : Int {
+	return operation(dirty)
+}
+
+val dirty : Int = 50
+val waterFilter : (Int) -> Int = { dirty -> dirty / 2 }
+
+fun feedFish (dirty : Int) = dirty + 10 
+
+fun dirtyPoccesor() {
+	// pass a lambda saved in var
+	dirty = updateDirty(dirty, waterFilter)
+	// pass a fun 
+	dirty = updateDirty(dirty, ::feedFish)
+	// pass a lambda defined
+	dirty = updateDirty(dirty) {dirty -> dirty + 50}
+}
+```
