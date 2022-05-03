@@ -27,3 +27,16 @@ val time = 20
 println(Thoday is: ${ if (day < 12) "Good Morning" else  "Good night"})
 ```
 
+Filters: 
+```kt
+val decorations = listOf ("rock", "paper", "plastic")
+println( decorations.filter{it[0] == 'p'} )
+// return -> ["paper", "plastic"]
+```
+Lambdas : Function with no name.
+```kt
+val swim = { println("swim \n") }
+swim()
+// return -> swim
+val waterFilter = { dirty : in }
+```
