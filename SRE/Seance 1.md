@@ -27,7 +27,7 @@
 - simphony
 
 #### Derniere seance:
-- final 
+- final sur rezos et PSY
 
 ## OS:
 **Carte** **mere**:
