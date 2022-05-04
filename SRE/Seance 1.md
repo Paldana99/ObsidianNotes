@@ -8,6 +8,27 @@
 	- 2 modeles
 	- Ethernet - TCP/IP
 
+## E-learning
+#### Linux
+- auto evaluation: exam chap (note assiduite)
+- evaluation Mid - Final
+#### Lge C
+- auto evaluation
+#### Rezo
+- auto evaluation
+	- xam definitif chaque chap
+	- exam final
+- exam pratique
+#### PSY
+- support
+- proc
+- sig
+- thread
+- simphony
+
+#### Derniere seance:
+- final 
+
 ## OS:
 **Carte** **mere**:
 	memoire cache, processeur, registre
