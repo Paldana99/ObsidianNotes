@@ -19,8 +19,7 @@ Pour connecter different controleur (interface, graphique, SATA ...) qui seront 
 
 ![[Pasted image 20220504093735.png]]
 ![[Pasted image 20220504095601.png]]
-
-[[Noyau]]
+![[Noyau]]
 
 Modele en couche, si un etage fonctionne pas, il marche plus. 
 BIOS ecrite en ROM (pas le cas des nouvelles systemes)
