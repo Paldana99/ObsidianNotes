@@ -19,4 +19,11 @@ Pour connecter different controleur (interface, graphique, SATA ...) qui seront 
 
 ![[Pasted image 20220504093735.png]]
 ![[Pasted image 20220504095601.png]]
-Modele en couche, si un etage fonctionne pas, i
+Modele en couche, si un etage fonctionne pas, il marche plus. 
+BIOS ecrite en ROM (pas le cas des nouvelles systemes)
+Noyau systemes: Il a tout ce qu'il faut pour gerer, exploiter le microprocesseur (gestion processeur) qui va etre transformer en **Thread**.
+Le noyeu est multitache.
+
+**Thread**: En verifie si il y a une interruption, et apres on fait une instruction. Ceci se repete. Si il y a une interruption -> execution du traitement associe. Quand on finit ce traitement, on retourne a l'instruction ou il a ete interrompu.  
+
+Au dessou
