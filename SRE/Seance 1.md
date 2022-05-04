@@ -34,6 +34,8 @@ Apres noyau il y a bibliotheque qui vont abstraire/masquer le noyau, et ensuite 
 ### **SHELL**: 
 Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
 
+	COMMANDE + OPTIONS + ARG(S) 
+
 #### man
 /usr/man
  - man1 : cdes user
@@ -51,3 +53,6 @@ Si on ne sait pas ou chercher: permet d'avoir un descriptif des differents mannu
 man -k key_word | grep key_word2
 ```
 **more** : permet de montrer par pages
+```sh
+ls -lR | more
+```
