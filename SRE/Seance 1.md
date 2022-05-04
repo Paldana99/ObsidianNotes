@@ -18,3 +18,5 @@ Les deux communique a travers de deux BUS:
 Pour connecter different controleur (interface, graphique, SATA ...) qui seront connecte aux differents periphierique
 
 ![[Pasted image 20220504093735.png]]
+![[Pasted image 20220504095601.png]]
+Modele en couche, si un etage fonctionne pas, i
