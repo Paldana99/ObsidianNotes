@@ -26,4 +26,7 @@ Le noyeu est multitache.
 
 **Thread**: En verifie si il y a une interruption, et apres on fait une instruction. Ceci se repete. Si il y a une interruption -> execution du traitement associe. Quand on finit ce traitement, on retourne a l'instruction ou il a ete interrompu.  
 
-Au dessou
+Apres noyau il y a bibliotheque qui vont abstraire/masquer le noyau, et ensuite il y a le **SHELL** qui va permettre lancer les autres process.
+
+**SHELL**: Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
+
