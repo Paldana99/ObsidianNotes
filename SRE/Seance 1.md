@@ -19,6 +19,9 @@ Pour connecter different controleur (interface, graphique, SATA ...) qui seront 
 
 ![[Pasted image 20220504093735.png]]
 ![[Pasted image 20220504095601.png]]
+
+[[Noyau]]
+
 Modele en couche, si un etage fonctionne pas, il marche plus. 
 BIOS ecrite en ROM (pas le cas des nouvelles systemes)
 Noyau systemes: Il a tout ce qu'il faut pour gerer, exploiter le microprocesseur (gestion processeur) qui va etre transformer en **Thread**.
@@ -28,5 +31,15 @@ Le noyeu est multitache.
 
 Apres noyau il y a bibliotheque qui vont abstraire/masquer le noyau, et ensuite il y a le **SHELL** qui va permettre lancer les autres process.
 
-**SHELL**: Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
+### **SHELL**: 
+Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
+
+#### man
+/usr/man
+ - man1 : cdes user
+ - man2: appel systeme
+ - man3: biblio C
+ - ...
+ - man7: TDPO sum les mecanismes systemes
+ - man8: cdes user admin
 
