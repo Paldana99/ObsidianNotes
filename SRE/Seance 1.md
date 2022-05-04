@@ -43,3 +43,11 @@ Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui
  - man7: TDPO sum les mecanismes systemes
  - man8: cdes user admin
 
+```sh
+man numero_section func
+```
+Si on ne sait pas ou chercher: permet d'avoir un descriptif des differents mannuel qui comporte le mot clees, on peut filtrer les resultat grace a un pipe **|**  et grep
+```sh
+man -k key_word | grep key_word2
+```
+**more** : permet de montrer par pages
