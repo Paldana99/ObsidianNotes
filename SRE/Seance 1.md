@@ -51,6 +51,8 @@ Le noyeu est multitache.
 
 Apres noyau il y a bibliotheque qui vont abstraire/masquer le noyau, et ensuite il y a le **SHELL** qui va permettre lancer les autres process.
 
+----
+
 ### **SHELL**: 
 Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
 
