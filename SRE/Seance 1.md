@@ -1,7 +1,7 @@
 # Introduction
 ## Seances:
 - 1 Shell
-- 2 C - lib
+- 2  C - lib
 - 3 et 5: Prog concurrante
 	- POSIX
 - 4 et 5: Architecture
@@ -54,7 +54,7 @@ Apres noyau il y a bibliotheque qui vont abstraire/masquer le noyau, et ensuite 
 ----
 
 ### **SHELL**: 
-Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui vont acceder a traver les bibliotheques. 
+Interpréteur de commande en ligne, qui va lancer les processus correspondant. Qui vont accéder a travers les bibliothèques. 
 
 	COMMANDE + OPTIONS + ARG(S) 
 
@@ -64,13 +64,13 @@ Interpreteur de commande en ligne, qui va lancer les processus correspodant. Qui
  - man2: appel systeme
  - man3: biblio C
  - ...
- - man7: TDPO sum les mecanismes systemes
+ - man7: TDPO sum les mécanismes systèmes
  - man8: cdes user admin
 
 ```sh
 man numero_section func
 ```
-Si on ne sait pas ou chercher: permet d'avoir un descriptif des differents mannuel qui comporte le mot clees, on peut filtrer les resultat grace a un pipe **|**  et grep
+Si on ne sait pas ou chercher: permet d'avoir un descriptif des différents manuel qui comporte le mot clé, on peut filtrer les résultat grâce a un pipe **|**  et grep
 ```sh
 man -k key_word | grep key_word2
 ```
@@ -78,3 +78,11 @@ man -k key_word | grep key_word2
 ```sh
 ls -lR | more
 ```
+
+`CTRL C`
+`CTRL D` END (fichier)
+`CTRL Z` pause (stopped)
+`jobs` avoir les jobs qui ont été stoppe.
+`bg %1` background, mettre en arrière plan un job (id 1 dans l'example)
+`CTRL S/Q` arrêt/reprise affichage
+`CTRL A/E` début/fin ligne
