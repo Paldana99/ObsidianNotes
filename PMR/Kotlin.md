@@ -274,4 +274,3 @@ val fishList: MyList<Fish>
 ```
 ## Annotations
 Everything can be annotades, and can receive parameters.
-[**Nicolas Acevedo**](https://github.com/nicoacevedor)
