@@ -48,3 +48,4 @@ De esta forma gracias al k y un mensaje vemos si el tag corresponde al enviado. 
 - Hay que definir formalmente los sistemas criptográficos, y nociones de seguridad usados.
 - Los supuestos detrás del funcionamiento, tengan una formulación precisa y sean conocidos.
 - Es importante construir **demostraciones formales de seguridad** (basadas en las definiciones y supuestos)
+
