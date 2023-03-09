@@ -58,3 +58,8 @@ De esta forma reducimos a un vocabulario mas compacto.
 - hipernimo: synset cuyo significado es mas general
 - hiponimo: synset mas especifico que el otro
 - meronimo: synset relacionados entre ellos, pero uno hace parte del otro
+
+
+
+
+
