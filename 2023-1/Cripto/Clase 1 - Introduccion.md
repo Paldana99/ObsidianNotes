@@ -49,4 +49,3 @@ De esta forma gracias al k y un mensaje vemos si el tag corresponde al enviado. 
 - Los supuestos detrás del funcionamiento, tengan una formulación precisa y sean conocidos.
 - Es importante construir **demostraciones formales de seguridad** (basadas en las definiciones y supuestos)
 
-

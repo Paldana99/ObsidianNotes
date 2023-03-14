@@ -22,7 +22,7 @@ Aun así es malo, ya que podemos encontrar mediante distribución de letras ver 
 
 ### Operación módulo
 
-Dados $a, n \in Z$ , existe un unico par de elementos $(q, r) \in Z^2$ tal que:
+Dados $a, n \in Z$ , existe un único par de elementos $(q, r) \in Z^2$ tal que:
 
 $$0 <= r < |n|$$
 $$a = q * n + r$$
@@ -40,12 +40,66 @@ Donde / es la división entera.
 se parte enumerando las letras:
 ![[Pasted image 20230309111453.png]]
 
-Para enviar un mensaje de largo l -> necesitamos una llave de largo l
+Para enviar un mensaje de largo $l$ -> necesitamos una llave de largo $l$
+Se aplica la suma según la coordenada de cada letra en nuestro alfabeto y luego se aplica el modulo del largo de nuestro alfabeto. 
+Puesto que usamos la definición del modulo positiva, tendremos un valor entre $[0, 27]$.
 ![[Pasted image 20230309111513.png]]
 Para decriptar:
+Mismo proceso, pero aplicando la resta.
 ![[Pasted image 20230309111934.png]]
 
+Definimos como el mensaje : $a$ y el mensaje traducido en numeros como: $\bar a$ 
+Asi podemos ver que: 
+$$\bar{\bar a} = a$$
+Con esto definimos:
+$$Enc_k(m)=(m+k) \mod 27$$
+$$Dec_k(m)=(c+k) \mod 27$$
+$$Dec_k(Enc_k(m))=((m+k) \mod 27 - k) \mod 27 = (m + k - k) \mod 27 = m \mod 27 = m$$
+
+> [!important] Revisar
+> Revisar como se reduce el primer mod de dentro.
+
+
+### Esquema criptográfico
+
+**K, M, C**
+
+K -> espacio de llaves
+M -> mensajes
+C -> textos cifrados
+
+Un esquema es un triple ($Gen, Enc, Dec$)
+
+$Gen$ es una distribución de probabilidades sobre $K$.
+
+![[Pasted image 20230314103259.png]]
 
 
 
+$Enc = {Enc_k | k \in K}$ es una familia de algoritmo para decriptar para cada $k \in K$, se tiene que $Dec_k: C -> M$
+
+Esperamos que para un esquema cript. se cumpla:
+
+$$\forall k \in K \forall m \in M: Dec_k(Enc_k(m)) = m$$
+> [!info] Formalizar
+> Es importante para la cripto moderna, la formalizacion de los conceptos para las demostracions. Importante valor
+
+
+**En este caso diremos que el esquema es perfectamente correcto.**
+
+#### Perfect Secrecy
+
+Cuando el atacante ve un mensaje cifrado, no gana ninguna información. 
+
+![[Pasted image 20230314104626.png]]
+
+
+La idea es que la probabilidad de la llave, es casi que haberla elegido al azar. 
+
+![[Pasted image 20230314110151.png]]
+
+Si el atacante tiene información previa, es decir puede conocer
+
+
+$$\sum_{k \in K: Enc(m_{0}=c_{o})}Gen(k)$$
 
