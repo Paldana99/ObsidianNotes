@@ -53,14 +53,29 @@ Asi podemos ver que:
 $$\bar{\bar a} = a$$
 Con esto definimos:
 $$Enc_k(m)=(m+k) \mod 27$$
-$$Dec_k(m)=(c+k) \mod 27$$
+$$Dec_k(c)=(c-k) \mod 27$$
 $$Dec_k(Enc_k(m))=((m+k) \mod 27 - k) \mod 27 = (m + k - k) \mod 27 = m \mod 27 = m$$
 
 > [!important] Revisar
-> Revisar como se reduce el primer mod de dentro.
+> Dado que: $(m + k) \mod 27 = m + k$ ya que un numero es siempre congruente consigo mismo.
+
+> [!info] Aritmetica modular
+> Division:
+> $$a \mid b \leftrightarrow \exists q \in \mathcal{Z} \quad a \cdot q = b  $$
+> Congruencia:
+> $$a \equiv b \mod m \leftrightarrow  m \mid (a-b)$$
+> Proposicion:
+> $$\forall m > 0 \text{ si } a\equiv b \mod m \quad \land c \equiv d \mod m$$
+> $$
+\begin{align}
+a + c  & \equiv  &  (b + d )\mod m \\
+a \cdot c  & \equiv & b \cdot d \mod m
+\end{align}$$
 
 
 ### Esquema criptográfico
+
+
 
 **K, M, C**
 
@@ -102,4 +117,12 @@ Si el atacante tiene información previa, es decir puede conocer
 
 
 $$\sum_{k \in K: Enc(m_{0}=c_{o})}Gen(k)$$
+
+![[Pasted image 20230320225140.png]]
+
+
+> [!abstract] Teorema
+> Sean $\mathcal{M},\mathcal{K},\mathcal{C}$ espacios de mensajes, llaves y textos cifrados, respectivamente
+> Si $\mid \mathcal{K}\mid < \mid \mathcal{M}\mid$, entonces no existe un esquema (Gen, Enc, Dec) que sea perfectamente secreto.
+
 
