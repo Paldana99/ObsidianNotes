@@ -38,3 +38,31 @@ Estos son invariantes al tamaño, rotación y ubicación
 
 ![[Pasted image 20230321120603.png]]
 
+## Descriptores de Furier
+
+![[Caracteristicas Geometricas 2023-03-23 11.37.16.excalidraw]]
+
+![[Caracteristicas Geometricas 2023-03-23 11.39.06.excalidraw]]
+
+Le aplicamos la **transformada de Fourier DFT**
+
+$$
+F_{m} = \sum_{k=0}^{L-1}f_{k}e^{\frac{-i2\pi mk}{L}}
+$$
+$$
+f_{k}=x_{k}+iy_{k}
+$$
+
+Para un circulo perfecto:
+$F_{0} = 0$
+$F_{1} = \text{valor alto}$
+$F_{2}=0\dots$
+$F_{i}=0$
+
+Si movemos el circulo, y no lo centramos en 0, entonces el $F_{0}\neq 0$, pero los otros quedan iguales. Por lo tanto es invariante a la posicion.
+
+Si al circulo le agregamos frecuencia en el borde, entonces los otros valores de F van a describir este contorno. 
+
+![[Caracteristicas Geometricas 2023-03-23 11.49.06.excalidraw]]
+
+Es variante al tamaño
