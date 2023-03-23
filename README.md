@@ -12,7 +12,7 @@ Notas de cursos
 
 - [[Clase 1 - Introduccion|Criptografía y Seguridad Computacional]]
 - [[Clase 1|Tópicos en Ciencia de la Computación NLP]]
-- [[Clase 1 -|Reconocimiento de Patrones]]
+- [[Caracteristicas Geometricas|Reconocimiento de Patrones]]
 - [[Modelos de Computacion|Complejidad Computacional]]
 
 

@@ -85,7 +85,7 @@ C -> textos cifrados
 
 Un esquema es un triple ($Gen, Enc, Dec$)
 
-$Gen$ es una distribución de probabilidades sobre $K$.
+**$Gen$** es una distribución de probabilidades sobre $K$.
 
 ![[Pasted image 20230314103259.png]]
 
