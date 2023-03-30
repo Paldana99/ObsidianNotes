@@ -40,21 +40,21 @@ Una función de hash es un par $(Gen, h)$ tal que:
 
 Si $m \in \{ 0,1 \}^{l'(n)}$ para un polinomio fijo $l'$ tal que $l'(n) > l(n)$ , entonces $(Gen, h)$ es una funcion de hash de largo fijo
 
-Una funcion $f : N \to R^{+}_{0}$ es despreciable si:
+Una función $f : N \to R^{+}_{0}$ es despreciable si:
 $$
 (\forall \text{polinomio } p: N \to N )(\exists n_{o}\in N)(\forall \geq n_{0})(f(n) < \frac{1}{p(n)})
 $$
 
 ### Formalizar noción de resistencia a colisiones
 
-Considere una funcion de hash $(Gen, h)$
+Considere una función de hash $(Gen, h)$
 
 Definimos e juego $Hash-Col(n)$:
 1. El verificador genera $s = Gen(1^n)$, y se lo entrega al adversario
 2. El adversario elige mensajes $m_{1}, m_{2}$ con $m_{1} \neq m_{2}$
 3. El adversario gana el juego si $h^{s}(m_{1}) = h^s(m_{2})$, y en caso contrario pierde
 
-Una funcion de hash $(Gen, h)$ se dice resistente a colisiones si **para todo adversario que funciona como un algoritmo aleatorizado de tiempo polinomial**, existe una funcion despreciable $f(n)$ tal que:
+Una función de hash $(Gen, h)$ se dice resistente a colisiones si **para todo adversario que funciona como un algoritmo aleatorizado de tiempo polinomial**, existe una función despreciable $f(n)$ tal que:
 
 $$
 Pr(\text{Adversario gane Hash-Col(n)})\leq f(n)
