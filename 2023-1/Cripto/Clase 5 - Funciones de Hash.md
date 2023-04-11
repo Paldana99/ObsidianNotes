@@ -1,4 +1,4 @@
-Funcion de un espacio de mensajes a un espacio de mensajes de largo fijo :
+Función de un espacio de mensajes a un espacio de mensajes de largo fijo :
 $$
 h : \mathcal{M} \to \mathcal{H}
 $$
