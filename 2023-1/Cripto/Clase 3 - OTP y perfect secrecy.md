@@ -1,4 +1,4 @@
-
+ 
 Cifrado (simétrico) -> nos referimos antes de los 70'
 
 ![[Pasted image 20230309104914.png]]
