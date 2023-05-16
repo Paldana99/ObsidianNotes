@@ -21,9 +21,11 @@ Las claves publicas y privadas de $A$ se construyen como:
 
 1. Genere números primos distintos $P$ y $Q$. Defina: $N := P \cdot Q$
 2. Defina $\phi(N):= (P-1)\cdot (Q-1)$
-3. Genere un numero $d$ tal que $MCD(d,\phi(N))=1$
+3. Genere un numero $d$ tal que $MCD(d,\phi(N))=1$, es decir primo relativo
 4. Construya un numero $e$ tal que $e \cdot d \equiv 1 \mod \phi(N)$
 5. Defina $S_{A}=(d,N)$ y $P_{A}=(e,N)$
+
+Los mensajes son números, de largo $m \in \{ 1, \dots, N-1 \}$
 
 ### Funciones Cifrado Descifrado
 
