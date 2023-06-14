@@ -1,5 +1,5 @@
 
-Un grupo de un par $(G, *)$, donde $G$ es un conjunto y $*:G \times G \to G$ es una operacion que satisface:
+Un grupo de un par $(G, *)$, donde $G$ es un conjunto y $*:G \times G \to G$ es una operación que satisface:
 
 - **Neutro**: Existe $e \in G$ tal que para todo $a \in G$
 $$
@@ -33,6 +33,12 @@ $$
 Z_{n}^{*}
 $$
 Grupo multiplicativo de los enteros modulo $n$
+
+> [!note] GCD y grupo
+> Notar que este grupo se define como:
+> $Z^*_{N}=\{ a \in \{ 1, \dots, N-1 \}| GCD(a, N)=1 \}$
+> Dado que $GCD(a,N)=1$ indica que es invertible.
+
 
 ## $Z_{n}^{*}$ y sus subgrupos
 

@@ -23,8 +23,8 @@ Se acuerda un grupo $<g>$ de orden $q$
 Alice genera $x \in \{ 1, \dots, q \}$ esa es su llave secreta.
 Alice publica $g^x$ que sera su llave publica
 
-Bob genera $y \in \{ 1, \dots, q \}$ (llave efimera)
-Le envia a Alice el par $(m * g^{xy}, g^y)$
+Bob genera $y \in \{ 1, \dots, q \}$ (llave efímera)
+Le envía a Alice el par $(m * g^{xy}, g^y)$
 
 
 Alice para recuperar $m$ debe buscar el inverso de $g^{xy}$
@@ -32,5 +32,8 @@ Alice para recuperar $m$ debe buscar el inverso de $g^{xy}$
 $$
 g^{xy}*g^{y(q-x)} = g^{xy+yq-xy}=g^{yq}
 $$
-Como $yq$ es multiplo del orden del grupo, $g^{yq}=e$. 
+Como $yq$ es múltiplo del orden del grupo, $g^{yq}=e$. 
 $g^{y(q-x)}$ es el inverso de $g^{xy}$
+
+![[Pasted image 20230614164242.png]]
+
