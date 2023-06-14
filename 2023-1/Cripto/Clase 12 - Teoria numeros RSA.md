@@ -42,3 +42,24 @@ $$
 Podemos entonces generar un primo relativo a n usando el mismo argumento que para los primos
 - Generamos números al azar $a \in \{  0, \dots, n-1 \}$ y verificamos si $MCD(a,n) = 1$
 
+# Seguridad de RSA
+
+Depende basicamente que no se pueda saber la clave privada a partir de la clave publica
+Para esto es necesario que **no** exista un algoritmo eficiente para encontrar un divisor de un numero
+
+## Factorizar N
+
+$N=P \cdot Q$ es RSA esta diseñado para que sea dificil encontrar un divisor.
+
+$$
+\begin{align}
+Pr_{x \sim U(2, N-1)} (MCD(x, N) > 1) & = \frac{N- \phi(N) - 1}{N - 2} \\
+& = \frac{P + Q - 2}{N - 2} \\
+
+& \leq  \frac{2 \cdot 10^{400}}{10^{798}-2} \approx \frac{1}{10^{398}}
+\end{align}
+$$
+Si $P$ y $Q$ tienen 400 digitos, entonces $P<10^{400}, Q<10^{400}$
+ y $N \geq 10^{798}$
+
+Ese evento no va a suceder.
