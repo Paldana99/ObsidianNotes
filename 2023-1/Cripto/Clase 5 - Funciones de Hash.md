@@ -20,6 +20,8 @@ No debe existir un algoritmo eficiente que pueda encontrar $m_{1}, m_{2} \in \ma
 
 Esta propiedad se denota como **ser resistente a colisiones**
 
+**Si es resistente a colisiones -> Es resistente a pre imagen**
+
 ## Aplicaciones de las funciones de hash
 
 Las funciones de hash (criptograficas) tienen muchas aplicaciones practicas, y nos van a acompañar durante todo el curso
