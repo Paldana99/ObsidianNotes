@@ -40,6 +40,24 @@ Ejecución **Out-of-order** podemos ejecutar instrucciones en orden random, para
 
 ![[Pasted image 20230810125854.png]]
 
+Re ordenar el código puede permitir aprovechar el pipelining
+```c
+for (i=0; i<N; i++)
+	s += a[i]*b[i];
+```
+
+Puede ser convertido:
+```c
+for (i = 0; i < N/2-1; i ++) {
+	sum1 += temp1;
+	temp1 = *(a + 0) * *(b + 0);
+	sum2 += temp2;
+	temp2 = *(a + 1) * *(b + 1);
+	a += 2; b += 2;
+}
+s = temp1 + temp2
+```
+
 ## Branch-prediction
 intentar adivinar el resultado de una operación para adelantar el bloque siguiente. En caso de error de la predicción, se resuelve de nuevo con el valor correcto y se usa el tiempo normal estimado.
 
@@ -106,3 +124,27 @@ GREEN500 -> Mejores computadores según rendimiento energetico
 - Invalidation miss (en multicore), el valor se actualiza por otro núcleo.
 
 
+UMA y Non-UMA
+
+### Actualizar cache
+
+Para mantener coherence se definen distintos estados:
+- Scartch -> no usado
+- Valid, la copia es correcta con la memoria
+- Reserved, valida y unica copia del dato
+- Dirty, el dato es modificado pero aun no se copia en memoria
+- Invalid, el dato esta en otro cache, y fue modificado por otro.
+
+Modelo MSI
+
+Mecanismos
+
+## Metricas
+
+- Tiempo de ejecución: $N_{CPU}$
+- Speedup: $\frac{T_{1}}{T_{2}}$
+- Eficiencia: $\frac{\text{Speedup}_{N}}{N}$
+
+## TLB
+
+Es un tipo de cache compartido. Memoria del proceso
